@@ -2,10 +2,11 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+
 import Login from "./pages/Login";
 
-import AdminDashboard from "./pages/admin/AdminDashboard";
-import AdminUsers from "./pages/admin/AdminUsers";
+import AdminDashboard from "./pages/Admin/AdminDashboard";
+import AdminUsers from "./pages/Admin/AdminUsers";
 
 import PatientDashboard from "./pages/patient/PatientDashboard";
 import Appointments from "./pages/patient/Appointments";
@@ -13,11 +14,11 @@ import AppointmentDetail from "./pages/patient/AppointmentDetail";
 import Prescriptions from "./pages/patient/Prescriptions";
 import Reports from "./pages/patient/Reports";
 
-import ReceptionistDashboard from "./pages/receptionist/ReceptionistDashboard";
-import Queue from "./pages/receptionist/Queue";
+import ReceptionistDashboard from "./pages/Receptionist/ReceptionistDashboard";
+import Queue from "./pages/Receptionist/Queue";
 
-import DoctorDashboard from "./pages/doctor/DoctorDashboard";
-import DoctorQueue from "./pages/doctor/DoctorQueue";
+import DoctorDashboard from "./pages/Doctor/DoctorDashboard";
+import DoctorQueue from "./pages/Doctor/DoctorQueue";
 
 export default function App() {
   return (

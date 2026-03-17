@@ -1,15 +1,25 @@
 import axios from "axios";
 
-const API = axios.create({
+const api = axios.create({
   baseURL: "https://cmsback.sampaarsh.cloud",
+  headers: { "Content-Type": "application/json" },
 });
 
-API.interceptors.request.use((req) => {
+api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
-  if (token) {
-    req.headers.Authorization = `Bearer ${token}`;
-  }
-  return req;
+  if (token) config.headers.Authorization = `Bearer ${token}`;
+  return config;
 });
 
-export default API;
+api.interceptors.response.use(
+  (res) => res,
+  (err) => {
+    if (err.response?.status === 401) {
+      localStorage.clear();
+      window.location.href = "/login";
+    }
+    return Promise.reject(err);
+  }
+);
+
+export default api;
