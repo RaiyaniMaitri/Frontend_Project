@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { clearAuth, getUser } from "../Utils/auth";
+import { clearAuth, getUser } from "../utils/auth";
 
 export default function Navbar() {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../api/auth";
-import { saveAuth } from "../Utils/auth";
+import { saveAuth } from "../utils/auth";
 import ErrorMsg from "../components/ErrorMsg";
 
 export default function Login() {

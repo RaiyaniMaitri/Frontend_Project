@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar";
 import Loader from "../../components/Loader";
 import ErrorMsg from "../../components/ErrorMsg";
 import { getMyAppointments } from "../../api/appointments";
-import { getUser } from "../../Utils/auth";
+import { getUser } from "../../utils/auth";
 
 export default function PatientDashboard() {
   const [appointments, setAppointments] = useState([]);
