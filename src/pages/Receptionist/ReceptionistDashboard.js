@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Loader from "../../components/Loader";
 import { getDailyQueue } from "../../api/queue";
-import { getUser } from "../../utils/auth";
+import { getUser } from "../../Utils/auth";
 
 export default function ReceptionistDashboard() {
   const user = getUser();

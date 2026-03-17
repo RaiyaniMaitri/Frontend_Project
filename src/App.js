@@ -8,11 +8,11 @@ import Login from "./pages/Login";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import AdminUsers from "./pages/Admin/AdminUsers";
 
-import PatientDashboard from "./pages/patient/PatientDashboard";
-import Appointments from "./pages/patient/Appointments";
-import AppointmentDetail from "./pages/patient/AppointmentDetail";
-import Prescriptions from "./pages/patient/Prescriptions";
-import Reports from "./pages/patient/Reports";
+import PatientDashboard from "./pages/Patient/PatientDashboard";
+import Appointments from "./pages/Patient/Appointments";
+import AppointmentDetail from "./pages/Patient/AppointmentDetail";
+import Prescriptions from "./pages/Patient/Prescriptions";
+import Reports from "./pages/Patient/Reports";
 
 import ReceptionistDashboard from "./pages/Receptionist/ReceptionistDashboard";
 import Queue from "./pages/Receptionist/Queue";

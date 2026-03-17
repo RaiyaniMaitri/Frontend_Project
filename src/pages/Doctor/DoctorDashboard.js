@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Loader from "../../components/Loader";
 import { getDoctorQueue } from "../../api/doctor";
-import { getUser } from "../../utils/auth";
+import { getUser } from "../../Utils/auth";
 
 export default function DoctorDashboard() {
   const user = getUser();
